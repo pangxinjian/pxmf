@@ -1,0 +1,160 @@
+@import url(m_resert.css);
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+header h1 {
+  color: white;
+  line-height: 4rem;
+  font-size: 1.3rem;
+}
+header img {
+  padding: 1.3rem 0.4rem 0 1rem;
+}
+section {
+  -webkit-box-flex: 1;
+  overflow: scroll;
+}
+section > div .banner {
+  width: 100%;
+  height: 16.5rem;
+  background: url('../images/logo_06.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+section > div .text {
+  width: 95%;
+  height: 9.9rem;
+  margin-top: 1.2rem;
+  margin-left: 2%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+section > div .text .phone {
+  width: 100%;
+  height: 4.3rem;
+  border: 1px solid #ccc;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section > div .text .phone dt {
+  width: 15%;
+  height: 4.3rem;
+  background: none;
+}
+section > div .text .phone dt .img_1 {
+  width: 100%;
+  height: 2.2rem;
+  margin-top: 1rem;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+section > div .text .phone dt .img_1 img {
+  display: inline-block;
+  margin-top: 0.1rem;
+}
+section > div .text .phone dd {
+  -webkit-box-flex: 1;
+}
+section > div .text .phone dd input {
+  margin-left: 0.8rem;
+  margin-top: 1.1rem;
+  width: 95%;
+  height: auto;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+}
+section > div .text .yzm {
+  width: 100%;
+  height: 4.3rem;
+  border: 1px solid #ccc;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 1rem;
+}
+section > div .text .yzm dt {
+  width: 15%;
+  height: 4.3rem;
+  background: none;
+}
+section > div .text .yzm dt .img_2 {
+  width: 100%;
+  height: 2.2rem;
+  margin-top: 1rem;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+section > div .text .yzm dt .img_2 img {
+  display: inline-block;
+  margin-top: 0.1rem;
+}
+section > div .text .yzm dd {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section > div .text .yzm dd .s_code {
+  -webkit-box-flex: 1;
+}
+section > div .text .yzm dd .s_code input {
+  margin-left: 0.8rem;
+  margin-top: 1.1rem;
+  width: 90%;
+  height: auto;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+}
+section > div .text .yzm dd .hq {
+  line-height: 4.3rem;
+  margin-left: 0.5rem;
+}
+section > div .text .yzm dd .hq .code {
+  width: 100%;
+  height: 3rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  outline: none;
+  border-radius: 1.5rem;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  background: #5bca95;
+  color: white;
+  font-size: 1.2rem;
+}
+section > div .dl {
+  width: 85%;
+  height: 4.3rem;
+  background: #45c68d;
+  margin-left: 7%;
+  margin-top: 1.5rem;
+  line-height: 4.3rem;
+  text-align: center;
+  border-radius: 0.6rem;
+}
+section > div .dl button {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  line-height: 4.3rem;
+  text-align: center;
+  color: white;
+  border: none;
+  background: none;
+  outline: none;
+}

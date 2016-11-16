@@ -1,0 +1,109 @@
+@import url('m_resert.css');
+
+.full(@w,@h){
+    width: @w;
+    height: @h;
+}
+.box(@ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+html{
+    font-size: 62.5%;
+}
+html,body,.wrap{
+    .full(100%,100%);
+}
+.wrap{
+    .box;
+}
+header{
+    .full(100%,4rem);
+    .box(horizontal);
+    background: #333333;
+    .h_left{
+        .box(horizontal);
+        h1{
+          color: white;
+          line-height: 4rem;
+          font-size: 1.3rem;  
+        }
+        img{
+            padding:1.3rem 0.5rem;
+        }
+    }
+    .h_center{
+        text-align: center;
+        -webkit-box-flex: 1;
+        color: white;
+        line-height: 4rem;
+        font-size: 1.3rem;
+        margin-right: 3rem;
+    }
+}
+section{
+    -webkit-box-flex: 1;
+    overflow: auto;
+    background: #efefef;
+    
+    &>div{
+        .box;
+        .full(100%,100%);        
+    .content{
+        .full(100%,auto);
+        background: white;
+        min-height: 3.9rem;
+        &>div{
+            .full(100%,3.9rem);
+            .box(horizontal);
+            border-bottom:1px solid #ccc;
+            font-size: 1.5rem;
+            line-height: 3.9rem;
+            p{
+                text-indent: 0.8em;
+                letter-spacing: 0.1rem;
+            }
+            .num{
+                -webkit-box-flex: 1;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+                text-indent: 0.6rem;
+            }
+        }
+        .zt{
+            .full(100%,3.9rem);
+            .box(horizontal);
+            border-bottom:1px solid #ccc;
+            font-size: 1.5rem;
+            line-height: 3.9rem;
+            p{
+                text-indent: 0.8em;
+                letter-spacing: 0.1rem;
+            }
+            .num{
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+                text-indent: 0.6rem;
+                -webkit-box-flex: 1;
+                .full(40%,3.9rem);
+            }
+            .qj{
+                -webkit-box-flex: 1;
+                margin-right: 1rem;
+               button{
+                    box-sizing: border-box;
+                    border: none;
+                    outline: none;
+                    text-align: center;
+                    background: #3fcc8a;
+                    border-radius: 1rem;
+                    width: 100%;
+                    color: white;
+               }
+            }
+        }
+    }
+    }
+}

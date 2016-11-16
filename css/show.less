@@ -1,0 +1,164 @@
+@import url(m_resert.css);
+.full(@w,@h){
+    width: @w;
+    height: @h;
+}
+.box(@ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+html{
+    font-size: 62.5%;
+}
+html,body,.wrap{
+    .full(100%,100%);
+}
+.wrap{
+    .box;
+}
+header{
+    .full(100%,4rem);
+    .box(horizontal);
+    background: #333333;
+    .h_left{
+        .box(horizontal);
+        h1{
+          color: white;
+          line-height: 4rem;
+          font-size: 1.3rem;  
+        }
+        img{
+            padding:1.3rem 0.4rem 0 1rem;
+        }
+    }
+    .h_center{
+        text-align: center;
+        -webkit-box-flex: 1;
+        color: white;
+        line-height: 4rem;
+        font-size: 1.3rem;
+    }
+}
+section{
+    -webkit-box-flex: 1;
+    background: #efefef;
+    .box(horizontal);
+    &>div{
+        .full(100%,100%);
+        overflow-x: auto;
+        .main{
+            ul{
+                .full(100%,3.3rem);
+                .box(horizontal);
+                margin-top: 0.9rem;
+                li{
+                    background: white;
+                    .full(40%,3.3rem);
+                    margin-left: 6.5%;
+                    border: 1px solid #ccc;
+                    border-radius: 0.3rem;
+                    .box(horizontal);
+                    line-height: 3.3rem;
+                    .search_1{
+                        .full(15%,3.3rem);
+                        text-align: center;
+                        img{
+                            vertical-align: middle;
+                            
+                        }
+                    }
+                    .search_t{
+                        -webkit-box-flex: 1;
+                        input{
+                            .full(95%,3.3rem);
+                            font-size: 1.2rem;
+                            border: none;
+                            outline: none;
+                            margin-left: 0.2rem;
+                            line-height: 3.3rem;
+                        }
+                    }
+                }
+            }
+        }
+        .cx{
+            .full(50%,3rem);
+            background: #45c68d;
+            margin-left: 25%;
+            margin-top: 1.5rem;
+            line-height: 3rem;
+            text-align: center;
+            border-radius: 2rem;
+            button{
+                font-size: 2rem;
+                letter-spacing: 0.2rem;
+                line-height: 3rem;
+                text-align: center;
+                color: white;
+                border: none;
+                background: none;
+                outline: none;
+            }
+        }
+        .terminal{
+            .full(100%,auto);
+            margin-top: 0.9rem;
+            .box;
+            .terminal_name{
+                .full(100%,3rem);
+                text-indent: 1em;
+                font-size: 1.4rem;
+                letter-spacing: 0.3rem;
+            }
+            .terminal_info{
+                .full(100%,auto);
+                background: white;
+                margin-top: -0.5rem;
+                min-height: 0rem;
+                .terminal_info_content{
+                    .full(100%,3.9rem);
+                    border-bottom: 1px solid #ccc;
+                    .box(horizontal);
+                    font-size: 1.5rem;
+                    line-height: 3.9rem;
+                    h1{
+                        text-indent: 1em;
+                    }
+                    p{
+                        -webkit-box-flex: 1;
+                        margin-left: 1rem;
+                        overflow:hidden;
+                        text-overflow:ellipsis;
+                        white-space:nowrap;
+                    }
+                    a{
+                        color: black;
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    .full(100%,4.4rem);
+    .box(horizontal);
+    .dq{
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        box-sizing: border-box;
+        .full(49%,4.4rem);
+        line-height: 4.4rem;
+        text-align: center;
+    }
+    .yq{
+        -webkit-box-flex: 1;
+        text-align: center;
+        line-height: 4.4rem;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+    .on{
+        background: greenyellow;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/info.css" />
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="h_left" ui-sref='show'>
+					<img src="images/login_1.jpg" alt="" />
+					<h1>关闭</h1>
+				</div>
+				<div class="h_center">
+					<h1>快件查询</h1>
+				</div>
+			</header>
+			<section id='wrapper'>
+				<div>
+				<div class="content">
+					<div>
+						<p>运单号:</p>
+						<p class="num">111111</p>
+					</div>
+					<div>
+						<p>快递员电话:</p>
+						<p class="num">18201072982</p>
+					</div>
+					<div>
+						<p>存件时间:</p>
+						<p class="num">2016-4-20 00:00</p>
+					</div>
+					<div>
+						<p>存件地址:</p>
+						<p class="num">珠江帝景A区</p>
+					</div>
+					<div class="zt">
+						<p>存件状态:</p>
+						<p class="num" ng-bind="zt==1?'已收取':'代取'"></p>
+						<div class="qj">	
+							<button ng-click='sq()' ng-if="zt==0">取件</button>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+		</div>
+	</body>
+</html>

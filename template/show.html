@@ -1,0 +1,155 @@
+
+	<div class="wrap">
+		<header>
+			<div class="h_left">
+				<img src="images/login_1.jpg" alt="" />
+				<h1>关闭</h1>
+			</div>
+			<div class="h_center">
+				<h1>快递记录</h1>
+			</div>
+			<div class="h_right">
+				<img src="images/show_sao_03.jpg" alt="" />
+			</div>
+		</header>
+		<section id='wrapper' class="wrapper">
+			<div class="tab" ng-show='show'>
+				<div class="main">
+					<ul>
+						<li>
+							<div class="search_1"><img src="images/show_fd_07.jpg"/></div>
+							<div class="search_t"><input type="text" placeholder="请输入运单号查询" /></div>
+						</li>
+						<li>
+							<div class="search_1"><img src="images/show_fd_07.jpg"/></div>
+							<div class="search_t"><input type="text" placeholder="请输入运单号查询" /></div>
+						</li>
+					</ul>
+				</div>
+				<div class="main">
+					<ul>
+						<li>
+							<div class="search_1"><img src="images/show_fd_07.jpg"/></div>
+							<div class="search_t"><input type="date"/></div>
+						</li>
+						<li>
+							<div class="search_1"><img src="images/show_fd_07.jpg"/></div>
+							<div class="search_t"><input type="date"/></div>
+						</li>
+					</ul>
+				</div>
+				<div class="cx" >
+					<button>查询</button>
+				</div>
+				<div class="terminal">
+					<p class="terminal_name">终端A</p>
+					<div class="terminal_info">
+						<div class="terminal_info_content">
+							<h1>运单号:</h1>
+							<p>11111111111111111111111111111111111111111111111111111111111111111111111</p>
+							<a href="#" ui-sref="info">取件 ></a>
+						</div>
+						<div class="terminal_info_content">
+							<h1>运单号:</h1>
+							<p>111111111111111111111111111111111111111111111111</p>
+							<a href="#" ui-sref="info">取件 ></a>
+						</div>
+					</div>
+				</div>
+				<div class="terminal">
+					<p class="terminal_name">终端B</p>
+					<div class="terminal_info">
+						<div class="terminal_info_content">
+							<h1>运单号:</h1>
+							<p>11111111111111111111111111111111111111111111111111111111111111111111111</p>
+							<a href="#" ui-sref="info">取件 ></a>
+						</div>
+						<div class="terminal_info_content">
+							<h1>运单号:</h1>
+							<p>11111111111111111111111111111111111111111111111111111111111111111111111</p>
+							<a href="#" ui-sref="info">取件 ></a>
+						</div>
+					</div>
+				</div>
+				<div class="terminal">
+					<p class="terminal_name">终端C</p>
+					<div class="terminal_info">
+						<div class="terminal_info_content">
+							<h1>运单号:</h1>
+							<p>11111111111111111111111111111111111111111111111111111111111111111111111</p>
+							<a href="#" ui-sref="info">取件 ></a>
+						</div>
+						<div class="terminal_info_content">
+							<h1>运单号:</h1>
+							<p>11111111111111111111111111111111111111111111111111111111111111111111111</p>
+							<a href="#" ui-sref="info">取件 ></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab" ng-show='hide'>
+				<div class="main">
+					<ul>
+						<li>
+							<div class="search_1"><img src="images/show_fd_07.jpg"/></div>
+							<div class="search_t"><input type="text" placeholder="请输入运单号查询" /></div>
+						</li>
+						<li>
+							<div class="search_1"><img src="images/show_fd_07.jpg"/></div>
+							<div class="search_t"><input type="text" placeholder="请输入运单号查询" /></div>
+						</li>
+					</ul>
+				</div>
+				<div class="main">
+					<ul>
+						<li>
+							<div class="search_1"><img src="images/show_fd_07.jpg"/></div>
+							<div class="search_t"><input type="date"/></div>
+						</li>
+						<li>
+							<div class="search_1"><img src="images/show_fd_07.jpg"/></div>
+							<div class="search_t"><input type="date"/></div>
+						</li>
+					</ul>
+				</div>
+				<div class="cx" >
+					<button>查询</button>
+				</div>
+				<div class="terminal">
+					<p class="terminal_name">终端A</p>
+					<div class="terminal_info">
+						<div class="terminal_info_content">
+							<h1>运单号:</h1>
+							<p>11111111111111111111111111111111111111111111111111111111111111111111111</p>
+							<a href="#" ui-sref="info">取件 ></a>
+						</div>
+						<div class="terminal_info_content">
+							<h1>运单号:</h1>
+							<p>111111111111111111111111111111111111111111111111</p>
+							<a href="#" ui-sref="info">取件 ></a>
+						</div>
+					</div>
+				</div>
+				<div class="terminal">
+					<p class="terminal_name">终端B</p>
+					<div class="terminal_info">
+						<div class="terminal_info_content">
+							<h1>运单号:</h1>
+							<p>11111111111111111111111111111111111111111111111111111111111111111111111</p>
+							<a href="#" ui-sref="info">取件 ></a>
+						</div>
+						<div class="terminal_info_content">
+							<h1>运单号:</h1>
+							<p>11111111111111111111111111111111111111111111111111111111111111111111111</p>
+							<a href="#" ui-sref="info">取件 ></a>
+						</div>
+					</div>
+				</div>
+				<div class="terminal">
+			</div>
+		</section>
+		<footer>
+			<div class="dq" ng-click='taba(1)' ng-style="{background:index==1?'greenyellow':'none'}"><h1>待取件</h1></div>
+			<div class="yq" ng-click='tabb(2)' ng-style="{background:index==2?'greenyellow':'none'}"><h1>已取件</h1></div>
+		</footer>
+	</div>
